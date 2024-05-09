@@ -7,11 +7,11 @@ body, html {
   padding: 0;
 
   font-family: Lora;
-  background-color: #284b3eFF;
+  background-color: #284B3EFF;
 }
 
 .bg-image {
-  background: linear-gradient(to top, transparent, #284b3e),
+  background: linear-gradient(to top, transparent, #284B3E),
     url("https://getwallpapers.com/wallpaper/full/7/b/a/513896.jpg");
 
   filter: blur(8px);
@@ -34,6 +34,11 @@ body, html {
   background-attachment: fixed;
 }
 
+a {
+  all: unset;
+  cursor: pointer;
+}
+
 h1 {
   display: inline;
   font-weight: bold;
@@ -54,27 +59,46 @@ span {
 .container {
   padding: 16px 16px 8px 16px;
   border-radius: 16px;
-  box-shadow: 0px 0px 256px #000000AA inset, 0px 0px 16px #00284b3e;
+  box-shadow: 0px 0px 256px #000000AA inset, 0px 0px 16px #284B3E80;
   color: #FFFFFF;
+  background-color: #000000AA;
 }
-.container > * {
+.container > h1, .container > h2, .container > h3, .container > h4, .container > h5, .container > h6,
+.container > p, .container > iframe {
   display: block;
   width: 100%;
   text-align: center;
 }
 
+button {
+  font-weight: bold;
+  padding: 8px;
+  border-radius: 8px;
+  border: 0px solid #FFFFFF;
+  width: 100%;
+
+  color: #FFFFFF;
+  background-color: rgb(35, 110, 83);
+
+  transition: all 0.125s ease-in-out;
+}
+button:hover {
+  color: #FFFFFF;
+  background-color: rgb(40, 156, 114);
+}
+
 .nav-pills {
-  --bs-nav-pills-link-active-bg: #284b3eFF;
+  --bs-nav-pills-link-active-bg: rgb(40, 156, 114);
 }
 .nav-pills > * {
-  margin: 8px;
+  margin: 2px;
 }
 .nav-link {
-  background-color: #284b3e80;
+  background-color: #284B3EFF;
   color: #808080;
 }
 .nav-link:hover {
-  background-color: #284b3eFF;
+  background-color: rgb(35, 110, 83);
   color: #FFFFFF;
 }
 
@@ -92,6 +116,9 @@ span {
   z-index: 4;
 }
 table {
+  width: 100%;
+}
+.table_home {
   position: absolute;
   top: 50%;
   width: 50%;
