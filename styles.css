@@ -7,11 +7,11 @@ body, html {
   padding: 0;
 
   font-family: Lora;
-  background-color: #808000FF;
+  background-color: #284b3eFF;
 }
 
 .bg-image {
-  background: linear-gradient(to top, transparent, olive),
+  background: linear-gradient(to top, transparent, #284b3e),
     url("https://getwallpapers.com/wallpaper/full/7/b/a/513896.jpg");
 
   filter: blur(8px);
@@ -36,6 +36,7 @@ body, html {
 
 h1 {
   display: inline;
+  font-weight: bold;
 }
 h2 {
   display: inline;
@@ -53,27 +54,27 @@ span {
 .container {
   padding: 16px 16px 8px 16px;
   border-radius: 16px;
-  box-shadow: 0px 0px 256px #000000AA inset, 0px 0px 16px #00000080;
+  box-shadow: 0px 0px 256px #000000AA inset, 0px 0px 16px #00284b3e;
   color: #FFFFFF;
 }
-.container > h1 {
+.container > * {
   display: block;
   width: 100%;
   text-align: center;
 }
 
 .nav-pills {
-  --bs-nav-pills-link-active-bg: #808000FF;
+  --bs-nav-pills-link-active-bg: #284b3eFF;
 }
 .nav-pills > * {
   margin: 8px;
 }
 .nav-link {
-  background-color: #80800080;
-  color: unset;
+  background-color: #284b3e80;
+  color: #808080;
 }
 .nav-link:hover {
-  background-color: #808000FF;
+  background-color: #284b3eFF;
   color: #FFFFFF;
 }
 
@@ -99,7 +100,7 @@ table {
   transform: translateX(50%) translateY(-50%);
 
   border-radius: 16px;
-  box-shadow: 0px 0px 128px #000000AA inset, 0px 0px 16px #00000080;
+  box-shadow: 0px 0px 128px #000000AA inset, 0px 0px 16px #284B3E80;
 }
 th, td {
   color: #FFFFFF;
